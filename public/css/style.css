@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+font-family: "Ninja Naruto";
+src: url(./assets/fonts/ninja_naruto/njnaruto.ttf) format(truetype);
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+background-color: orange;
+}
+
+/*Estilização da Navbar*/
+header nav {
+  font-family: Ninja Naruto;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+}
+
+
+
+header nav ul li img {
+  width: 100%;
+}
+
+header nav h1 {
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  padding-top: 7px;
+  font-size: 2rem;
+  position: absolute;
+  margin-left: 38rem;
+  color: rgb(255, 98, 0);
+  letter-spacing: 2px;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  width: 98.7%;
+}
+
+.dropdown-menu ul {
+  width: 70px;
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+}
+
+.dropdown-menu ul li {
+  display: inline;
+  position: initial;
+}
+
+.dropdown-menu ul li a {
+  position: initial;
+  padding-left: 0;
+  margin-left: 0;
+  width: 125px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+}
+
+.dropdown-menu ul li a:hover {
+}
+
+.dropdown-menu ul li a img {
+  width: 30%;
+  border: none;
+}
+
+.dropdown-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+}
+
+.dropdown-menu ul li:hover ul {
+  display: block;
+}
+
+.dropdown-menu ul ul li {
+  text-decoration: none;
+}
+
+.dropdown-menu ul li ul {
+  background-color: black;
+  padding: 0;
+  width: 130px;
+}
+
+.dropdown-menu ul ul {
+  width: 150px;
+}
+
+.dropdown-menu ul ul li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: left;
+  padding: 10px;
+  padding-top: 20px;
+  width: 125px;
+  height: 20px;
+}
+
+.dropdown-menu ul ul li a:hover {
+  border: solid white;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+}
+
+header div img {
+  margin-top: 61px;
+}
+
+
+main {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: Roboto;
+}
+
+main h2#texto {
+  margin: 0 10rem 0 10rem;
+  font-size: 15px;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+#cards h2 {
+  margin-top: 7rem;
+  width: 100%;
+}
+
+#cards a {
+  text-decoration: none;
+  color: black;
+}
+
+#cards div.card {
+  font-weight: 800;
+  background-color: white;
+  width: 200px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  padding: 15px;
+  padding-bottom: 0.4rem;
+  margin: 3rem -5rem 0rem 10.3rem;
+  box-shadow: 5px 5px 5px 5px #00000025;
+  border: solid 1px black;
+  transition: all 0.2s ease-in-out;
+}
+
+#cards div.card:hover {
+  transform: scale(1.05);
+}
+
+#cards div.card h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0.6rem;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+#cards div.card img {
+  width: 200px;
+  height: 200px;
+}
+
+#cards div.card div.footer-card {
+  text-align: left;
+  margin-top: 0.6rem;
+  font-size: 12px;
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#cards div.card div.footer-card p {
+  margin-top: 0.5rem;
+}
+
+
+
+/*Detalhes.ejs*/
+
+#detalhesAll{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+section#detalhesAll div.parteUm{
+  display:block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#detalhesAll div.parteUm img{
+  width: 371.89px;
+  height: 371.89px;
+  margin-left: 15rem;
+  margin-right: 2rem;
+}
+
+section#detalhesAll div.parteUm div.parteDois{
+  display: flex;
+  width: 58%;
+  justify-content: space-between;
+  margin-left: 15rem;
+}
+
+section#detalhesAll div.parteUm div.parteTres{
+  display: flex;
+  width: 58%;
+  justify-content: space-between;
+  margin-left: 15rem;
+}
+
+section#detalhesAll div.detalhes {
+  display: flex;
+  margin: 0;
+  justify-content: left;
+  letter-spacing: 0;
+}
+
+section#detalhesAll div.detalhes div.parteQuatro{
+  background-color: #00000025;
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+section#detalhesAll div.detalhes div.parteQuatro h3{
+  width: 100%;
+}
+
+section#detalhesAll div.detalhes div.parteCinco{
+  background-color: #00000025;
+  display: flex;
+  text-align: right;
+  flex-wrap: wrap;
+  width: 35%;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+section#detalhesAll div.detalhes div.parteCinco h3{
+  width: 100%;
+}
+
+section#cards a img.delete-icon{
+  transition: all .2s ease-in-out;
+  width: 22px;
+  height: 20px;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  margin-right: -7rem;
+}
+
+section#cards a img.delete-icon:hover{
+  transform: scale(1.1);
+}
+
+section#cards a img.edit-icon{
+  transition: all .2s ease-in-out;
+  width: 20px;
+  height: 20px;
+  margin-top: 5rem;
+  margin-left: 5.5rem;
+  margin-right: -7rem;
+}
+
+section#cards a img.edit-icon:hover{
+  transform: scale(1.1);
+}
+
+
+section#cadastro {
+  margin: -2rem 5rem 0 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section#cadastro h2{
+  width: 100%;
+  margin: 3rem;
+}
+
+section#cadastro div form section#link-da-imagem{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+}
+
+section#cadastro div form section#link-da-imagem label#label-img{
+  width: 100%;
+}
+
+section#cadastro div form section#link-da-imagem input{
+  width: 66%;
+  font-size: 20px;
+}
+
+section#cadastro div{
+  display: flex;
+  padding: 0 15rem 0 15rem;
+  padding-bottom: 5rem;
+}
+
+section#cadastro div img {
+  width: 34%;
+  border-radius: 2rem;
+}
+
+section#cadastro div form{
+  text-align: start;
+  padding-left: 20px;
+}
+
+
+section#cadastro div form div{
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  justify-content: start;
+}
+
+section#cadastro div form div label {
+  margin-left: 1rem;
+}
+
+section#cadastro div form div label input{
+  font-size: 20px;
+}
+
+section#cadastro div form button{
+  margin-left: 14rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  border: solid 1px black;
+  border-radius: 1rem;
+  padding: .7rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+section#cadastro div form button:hover{
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+}

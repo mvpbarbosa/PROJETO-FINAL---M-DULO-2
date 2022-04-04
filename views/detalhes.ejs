@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Detalhes</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        
+        <section id="detalhesAll">
+            <div class="parteUm">
+                <div class="parteDois">
+                    <h3><%= personagem.nome %> </h3>
+                    <h3><%= personagem.id %> </h3>
+                </div>
+                <img src="<%= personagem.imagem %>" alt="">
+                <div class="parteTres">
+                    <h3>Clã: <%= personagem.cla %> </h3>
+                    <h3>Vila: <%= personagem.vila %> </h3>
+                </div>
+            </div>
+            <div class="detalhes">
+                <div class="parteQuatro">
+                    <h3>Idade: <%= personagem.idade %> </h3>
+                    <h3>Altura: <%= personagem.altura %> </h3>
+                    <h3>Peso: <%= personagem.peso %> </h3>
+                </div>
+
+                <div class="parteCinco">
+                    <h3>Patente Ninja: <%= personagem.patente %></h3>
+                    <h3>Sexo: <%= personagem.sexo %> </h3>
+                    <h3>Tranformações da Natureza: <%= personagem.transformacao %></h3>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

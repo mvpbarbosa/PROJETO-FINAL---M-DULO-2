@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Criar</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <section id="cadastro">
+
+            <h2>Cadastre um novo personagem!</h2>
+
+
+            <div>
+
+                <img src="./assets/img/imagem-cadastro.jpg" alt="">
+
+                <form action="/criar" method="POST">
+
+                <div>
+                    <label for="nome">Nome:
+                    <input type="text" name="nome" id="nome">
+                    </label>
+
+                    <label for="cla">Clã:
+                    <input type="text" name="cla" id="cla">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="vila">Vila:
+                        <input type="text" name="vila" id="vila">
+                        </label>
+    
+                        <label for="idade">Idade:
+                            <input type="number" name="idade" id="idade">
+                        </label>    
+    
+                </div>
+
+                <div>
+
+                    <label for="altura">Altura:
+                        <input type="number" name="altura" id="altura">
+                    </label>
+
+                    <label for="peso">Peso:
+                        <input type="number" name="peso" id="peso">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="sexo">Sexo:
+                        <input type="text" name="sexo" id="sexo">
+                    </label>
+
+                    <label for="patente">Patente Ninja:
+                        <input type="text" name="patente" id="patente">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="transformacao">Naturezas de Chakra:
+                        <input type="text" name="transformacao" id="transformacao">
+                    </label>
+
+                    <label for="imagem" id="label-img">Link da Imagem:
+                        <input type="url" name="imagem" id="imagem">
+                    </label>
+                </div> 
+
+                <button id="btnCadastrar" type="submit">Cadastrar</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

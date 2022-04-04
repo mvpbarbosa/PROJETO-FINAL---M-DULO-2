@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Index</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <section id="cards">
+            <h2>Lista de Personagens</h2>
+    
+            <% personagens.forEach(element => { %>
+        
+                <div class="card">
+                    <a href="/detalhes/<%= element.id %> ">
+                        <h3><%= element.nome %></h3>
+                        <img src=<%=element.imagem%> alt=/>
+                
+                        <div class="footer-card">
+                            <p class="cla">Clã: <%= element.cla %></p>
+                            <p class="vila">Vila: <%= element.vila %></p>
+                        </div>
+                    </a>
+                </div>
+                <a href="/deletar/ <%= element.id %> ">
+                    <img class="delete-icon" src="./assets/img/delete-icon.png" alt="">
+                </a>
+                <a href="/editar/<%= element.id %> ">
+                    <img class="edit-icon" src="./assets/img/edit-icon.png" alt="">
+                </a>
+            <% }) %>
+          </section>    
+        </main>
+    
+
+</body>
+</html>
