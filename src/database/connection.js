@@ -6,6 +6,12 @@ dotenv.config()
 export const connection = new Sequelize(
     process.env.DATABASE_URL,
     {
-        dialect: 'postgres'
-    }
+        dialect: 'postgres',
+        dialectOptions:{
+            ssl: {
+                require: true,
+                rejectUnauthorized: false,
+            },
+        },
+    },
 )
